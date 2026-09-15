@@ -1,0 +1,19 @@
+{
+  "name": "meme-police-sandbox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Run meme-police game modules locally on a stand-in for ws-server-engine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "sync-engine-client": "node scripts/sync-engine-client.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "4.22.2",
+    "ws": "5.2.5",
+    "ws-server-wrapper": "1.4.1"
+  }
+}

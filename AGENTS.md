@@ -107,8 +107,10 @@ class GameState extends wsServer.users.RoomState {
 
 ## Клиент
 
-Опорный пример — любая игра сайта (`citadels-web`, `codenames`) или
-`mp-template-app` для Vue/Vite.
+Опорные примеры — открытые игры сайта:
+[citadels-web](https://github.com/xdghcnt/citadels-web) и
+[who-am-i-web](https://github.com/xdghcnt/who-am-i-web) (`module.js` и `public/app.jsx`).
+Они старше этих правил, поэтому в CSS им не подражай — там правила выше.
 
 ```jsx
 componentDidMount() {

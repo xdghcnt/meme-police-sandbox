@@ -11,6 +11,8 @@
 
 ## Запуск
 
+Установка и первые шаги — в разделе «Если ты агент…» в [README.md](README.md).
+
 ```bash
 # рядом лежат: ./meme-police-sandbox и ./<игра>
 cd meme-police-sandbox

@@ -2,7 +2,7 @@
 "use strict";
 
 /* meme-police sandbox: runs game modules the way the site does, on a
-   stand-in for the private ws-server-engine.
+   lightweight version of ws-server-engine.
 
        node server.js [options] <game-dir>[=/bg/path] [...]
 

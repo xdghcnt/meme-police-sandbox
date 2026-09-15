@@ -3,9 +3,9 @@
 
 /* Copies the engine's browser side into the sandbox: the files every visitor
    of the site downloads anyway (deps.html, client-react.jsx, client.css,
-   libs, media, ws-client.js). The engine's server code stays private.
+   libs, media, ws-client.js). The server side is the sandbox's own.
 
-   Run by someone with access to ws-server-engine:
+   Run from a checkout of ws-server-engine:
        node scripts/sync-engine-client.js [path/to/ws-server-engine]
    then commit the result. */
 

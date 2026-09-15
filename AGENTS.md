@@ -1,7 +1,7 @@
 # meme-police sandbox — инструкции для агента
 
-Песочница запускает модуль игры так же, как это делает сайт meme-police, но на
-открытой замене закрытого движка `ws-server-engine`. Клиентская часть движка
+Песочница запускает модуль игры так же, как это делает сайт meme-police, на
+облегчённой версии его движка `ws-server-engine`. Клиентская часть движка
 (`engine/public`, `engine/ws-client.js`) — настоящая, скопирована с сайта.
 Серверная (`engine/*.js`) — заменитель с тем же поведением для игры.
 
@@ -75,7 +75,7 @@ class GameState extends wsServer.users.RoomState {
 - **`super(...)` с `...this.room`.** Базовый класс кладёт в `this.room` общие поля
   (`authUsers`, `playerAvatars`, `chatEnabled` и т.д.), их нельзя терять.
 - **Id игры.** Четвёртый аргумент — id из списка игр движка или `null`. Список живёт
-  в закрытом `data.js`: новой игры там нет, и `registry.games.<игра>.id` на сайте
+  в `data.js` движка сайта: новой игры там нет, и `registry.games.<игра>.id` на сайте
   упадёт. Передавай `null`. Никогда не клади туда объект.
 - **Обязательные методы** (движок вызывает их сам): `userJoin(data)`, `userLeft(userId)`,
   `userEvent(userId, event, args)`, `getPlayerCount()`, `getActivePlayerCount()`,
